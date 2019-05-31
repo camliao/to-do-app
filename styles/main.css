@@ -1,0 +1,21 @@
+html {
+  font-size: 10px;
+}
+
+body {
+   justify-content: center;
+   text-align: center;
+ }
+
+h1 {
+   padding-bottom: 3rem;
+ }
+
+label {
+   font-size: 2rem;
+ }
+
+input {
+  height: 2.7rem;
+  width: 20rem;
+}
