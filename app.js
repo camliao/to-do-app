@@ -3,19 +3,6 @@ function onReady() {
   const addToDoForm = document.getElementById('addToDoForm');
   let id = 0;
 
-  function createNewToDo() {
-      const newToDoText = document.getElementById('newToDoText');
-      if (!newToDoText.value) { return; }
-      toDos.push({
-      title: newToDoText.value,
-      complete: false,
-      id: id
-    });
-
-      id++;
-      newToDoText.value = '';
-      renderTheUI();
-  }
 
   function renderTheUI() {
       const toDoList = document.getElementById('toDoList');
@@ -45,6 +32,21 @@ function onReady() {
         newLi.appendChild(deleteBtn);
     });
 
+  }
+
+
+  function createNewToDo() {
+      const newToDoText = document.getElementById('newToDoText');
+      if (!newToDoText.value) { return; }
+      toDos.push({
+      title: newToDoText.value,
+      complete: false,
+      id: id
+    });
+
+      id++;
+      newToDoText.value = '';
+      renderTheUI();
   }
 
 
